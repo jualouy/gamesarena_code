@@ -1,30 +1,44 @@
-# Link de Produccion 
+# Link de Producción 
 https://jualouy.github.io/gamesarena_prod/
+(se puede ver el demo funcionando)
 
-# Gamesarena
+# Link de Repositorio:
+https://github.com/jualouy/gamesarena_code
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+# Dependencias Utilizadas
 
-## Development server
+# Angular Cli
+https://angular.io/cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Bootswatch
+https://www.npmjs.com/package/bootswatch
 
-## Code scaffolding
+Como bootstrap todavía depende de jquery instalar así:
+npm i bootswatch bootstrap jquery @popperjs/core
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# ngx-pagination:
+https://www.npmjs.com/package/ngx-pagination
 
-## Build
+# Datos a tener en cuenta para correr en localhost (Esto ya esta en este repositiorio, pero es para tener en cuenta):
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+En npm de Bootswatch copiamos el codigo de estilos sass:
 
-## Running unit tests
+https://www.npmjs.com/package/bootswatch
+@import "~bootswatch/dist/darkly/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/darkly/bootswatch"
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+En bootswatch se pueden elegir diferentes themes
+https://bootswatch.com/
+@import "~bootswatch/dist/[theme]/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/[theme]/bootswatch"
 
-## Running end-to-end tests
+(Esto también ya está)
+Editar el angular.json en scripts:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+"scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
