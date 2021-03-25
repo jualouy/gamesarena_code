@@ -1,0 +1,75 @@
+input[type=text] {  
+    padding: 12px 40px;  
+}
+
+.fontuser { 
+    position: relative; 
+} 
+  
+.fontuser i.fa-search { 
+    position: absolute; 
+    left: 15px; 
+    top: 16px; 
+    color: gray; 
+}
+
+.fontuser i.fa-times-circle { 
+    position: absolute; 
+    right: 15px; 
+    top: 16px; 
+    color: gray;
+    cursor: pointer;   
+}
+
+.odd {
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+
+.even {
+    width: 48%;
+    height: 200px;
+    float: left;
+    margin-right: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .odd {
+        width: 100%;
+        height: 200px;
+        float: initial;
+    }
+    
+    .even {
+        width: 100%;
+        height: 200px;
+        float: initial;
+        margin-right: 0px;
+    }
+
+}
+
+.card-header span {
+    float: right;
+    font-size: 100% !important;
+}
+
+.card #star {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.card #star i {
+    color: #f39c12;  
+}
+
+.sort-icons {
+    margin-left: 8px;
+}
+
+#closenopag {
+    cursor: pointer; 
+}
