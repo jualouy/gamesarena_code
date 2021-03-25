@@ -25,17 +25,25 @@ https://www.npmjs.com/package/ngx-pagination
 En npm de Bootswatch copiamos el codigo de estilos sass:
 
 https://www.npmjs.com/package/bootswatch
-@import "~bootswatch/dist/darkly/variables";\n
-@import "~bootstrap/scss/bootstrap";\n
-@import "~bootswatch/dist/darkly/bootswatch";\n
+
+@import "~bootswatch/dist/darkly/variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "~bootswatch/dist/darkly/bootswatch";
 
 En bootswatch se pueden elegir diferentes themes
+
 https://bootswatch.com/
-@import "~bootswatch/dist/[theme]/variables";\n
-@import "~bootstrap/scss/bootstrap";\n
-@import "~bootswatch/dist/[theme]/bootswatch";\n
+
+@import "~bootswatch/dist/[theme]/variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "~bootswatch/dist/[theme]/bootswatch";
 
 (Esto también ya está)
+
 Editar el angular.json en scripts:
 
 "scripts": [
