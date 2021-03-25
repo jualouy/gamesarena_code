@@ -51,3 +51,6 @@ Editar el angular.json en scripts:
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+# Funcionalidades:
+
+Los filtros funcionan anidados y en el input se puede buscar por nombre y plataforma, para buscar por plataforma se puede escribir por ejemplo PC y luego enter, y también se pueden utilizar los filtros de ASC y DESC por puntaje junto con la busqueda PC, lo mismo por nombre.
