@@ -37,12 +37,6 @@
     <div class="card-header">Genere: {{items.genre}} <span class="badge badge-pill badge-danger">{{items.score}}</span></div>
 </div>
 
-<style>
-  .my-pagination .ngx-pagination .current {
-    background: red;
-  }
-</style>
-
 <div class="row container">
   <div class="col-12 mt-8" style="text-align: center; margin-top: 40px;">
     <pagination-controls class="my-pagination" (pageChange)="pageActual = $event" autoHide="true" responsive="true"></pagination-controls>
