@@ -1,5 +1,5 @@
 <div class="form-group mt-5 fontuser">
-    <input [(ngModel)]="search" (keyup.enter)="show_this=false; pageActual=1" (ngModelChange)="valuePageSearch()" name="search" class="form-control form-control-lg" type="text" placeholder="Search Games (by name or platform)..." />
+    <input [(ngModel)]="search" (keyup.esc)="init_values()" (keyup.enter)="show_this=false; pageActual=1" (ngModelChange)="valuePageSearch()" name="search" class="form-control form-control-lg" type="text" placeholder="Search Games (by name or platform)..." />
     <i class="fa fa-search fa-lg"></i><i *ngIf="search" (click)="init_values()" class="fa fa-times-circle fa-lg"></i>
     <ul class="list-group" *ngIf="show_this">									
       <li *ngFor="let item of games_data | filter:search;" class="list-group-item" [ngClass]="{'active': item.active}" (mouseover)="activateClassT(item)" (mouseout)="activateClassF(item)" (click)='search=item.title; show_this=false; pageActual=1' style="cursor: pointer;" >{{item.title}} - {{item.platform}}</li>									  
