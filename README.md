@@ -20,9 +20,9 @@ npm i bootswatch bootstrap jquery @popperjs/core
 https://www.npmjs.com/package/ngx-pagination
 
 # Datos a tener en cuenta para correr en localhost:
-(Esto ya esta en este repositiorio, pero es para tener en cuenta)
+(Esto ya está en este repositiorio, pero es para tener en cuenta)
 
-En npm de Bootswatch copiamos el codigo de estilos sass:
+En npm de Bootswatch copiamos el código de estilos sass:
 
 https://www.npmjs.com/package/bootswatch
 
@@ -53,4 +53,4 @@ Editar el angular.json en scripts:
             ]
 # Funcionalidades:
 
-Los filtros funcionan anidados y en el input se puede buscar por nombre y plataforma, para buscar por plataforma se puede escribir por ejemplo PC y luego enter, y también se pueden utilizar los filtros de ASC y DESC por puntaje junto con la busqueda PC, lo mismo por nombre.
+Los filtros funcionan anidados y en el input se puede buscar por nombre y plataforma, para buscar por plataforma se puede escribir por ejemplo PC y luego enter, y también se pueden utilizar los filtros de ASC y DESC por puntaje junto con la búsqueda PC, lo mismo por nombre.
