@@ -70,5 +70,17 @@ export class BodyComponent implements OnInit {
     }
 
   }
+  
+  keyup(event) {
+    if (event.key === "Enter"){ 
+      this.show_this = false; 
+      this.pageActual = 1;
+    }
+  }
+
+  keyupEnter(event) {
+    this.show_this = false; 
+    this.pageActual = 1;
+  }
 
 }
