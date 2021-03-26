@@ -8,13 +8,12 @@ export class FilterPipe implements PipeTransform {
   transform(value: any, arg: any): any {
 
     if(arg==='ASC'){
-      console.log(value.sort((a, b) => parseFloat(b.score) - parseFloat(a.score)));
-      return value.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
+      return value.sort((a, b) => parseFloat(a.score) - parseFloat(b.score));
     }
     
     if(arg==='DESC'){
       console.log('DESC');
-      return value.sort((a, b) => parseFloat(a.score) - parseFloat(b.score));
+      return value.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
     }
 
     if(arg === '' || arg.length < 2){ 
